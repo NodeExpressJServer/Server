@@ -1,0 +1,20 @@
+//
+   Created by Jean-Vital on 26/10/2015.
+
+doctype html
+html
+   head
+      title Gags
+   body
+      h1 Hello world!
+      h2 these are my gags
+
+
+         each item in data
+            div
+               a(href=item.url)
+                  p #{item.title}
+
+               video(preload='auto', style='max-height:500px; max-width: 500px;', loop='', muted='', width='300' controls)
+                  source(src=item.url, type=item.type)
+            br
